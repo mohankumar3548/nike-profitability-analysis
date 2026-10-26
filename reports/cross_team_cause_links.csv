@@ -1,0 +1,52 @@
+from,to,lag_months,correlation
+Purchase orders (Ops),Headcount (HR),1,0.96
+Headcount (HR),Purchase orders (Ops),3,0.96
+Purchase orders (Ops),Unit sales (Mkt),3,0.95
+Labour cost (HR),Purchase orders (Ops),2,0.94
+Purchase orders (Ops),Labour cost (HR),1,0.94
+Freight cost (Ops),Unit sales (Mkt),1,0.92
+Headcount (HR),Unit sales (Mkt),1,0.92
+Inventory (Ops),Discount rate (Mkt),2,0.91
+Unit sales (Mkt),Headcount (HR),1,0.91
+Labour cost (HR),Unit sales (Mkt),3,0.9
+Unit sales (Mkt),Purchase orders (Ops),1,0.9
+Storage cost (Ops),Discount rate (Mkt),2,0.9
+Unit sales (Mkt),Labour cost (HR),1,0.89
+Unit sales (Mkt),Freight cost (Ops),1,0.89
+Inventory (Ops),Unit sales (Mkt),2,0.89
+Headcount (HR),Inventory (Ops),3,0.86
+Storage cost (Ops),Unit sales (Mkt),1,0.86
+Headcount (HR),Freight cost (Ops),1,0.86
+Freight cost (Ops),Headcount (HR),1,0.85
+Freight cost (Ops),Labour cost (HR),1,0.84
+Unit sales (Mkt),Inventory (Ops),1,0.84
+Labour cost (HR),Freight cost (Ops),1,0.83
+Labour cost (HR),Inventory (Ops),3,0.83
+Headcount (HR),Storage cost (Ops),3,0.82
+Freight cost (Ops),Discount rate (Mkt),1,0.82
+Unit sales (Mkt),Storage cost (Ops),3,0.82
+Operating margin (Fin),Discount rate (Mkt),1,-0.81
+Inventory (Ops),Operating margin (Fin),1,-0.8
+Discount rate (Mkt),Freight cost (Ops),1,0.8
+Storage cost (Ops),Operating margin (Fin),1,-0.8
+Discount rate (Mkt),Inventory (Ops),1,0.8
+Purchase orders (Ops),Discount rate (Mkt),3,0.79
+Discount rate (Mkt),Storage cost (Ops),1,0.79
+Labour cost (HR),Storage cost (Ops),3,0.79
+Purchase orders (Ops),Operating margin (Fin),3,-0.76
+Operating margin (Fin),Inventory (Ops),1,-0.76
+Inventory (Ops),Headcount (HR),1,0.76
+Discount rate (Mkt),Operating margin (Fin),1,-0.76
+Operating margin (Fin),Storage cost (Ops),1,-0.75
+Unit sales (Mkt),Operating margin (Fin),3,-0.74
+Inventory (Ops),Labour cost (HR),1,0.74
+Operating margin (Fin),Freight cost (Ops),1,-0.74
+Storage cost (Ops),Headcount (HR),1,0.72
+Storage cost (Ops),Labour cost (HR),1,0.7
+Headcount (HR),Operating margin (Fin),1,-0.69
+Freight cost (Ops),Operating margin (Fin),3,-0.68
+Headcount (HR),Discount rate (Mkt),3,0.66
+Labour cost (HR),Operating margin (Fin),1,-0.66
+Operating margin (Fin),Unit sales (Mkt),1,-0.64
+Discount rate (Mkt),Purchase orders (Ops),1,0.62
+Labour cost (HR),Discount rate (Mkt),1,0.62

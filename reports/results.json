@@ -1,0 +1,491 @@
+{
+  "title": "Nike Profit Detective",
+  "company": "Nike",
+  "kpis": [
+    {
+      "label": "Quarters down vs last year",
+      "value": "3",
+      "note": "In a row, year-on-year"
+    },
+    {
+      "label": "Operating margin",
+      "value": "6.8%",
+      "note": "-4.3 pp vs a year ago"
+    },
+    {
+      "label": "Teams on target",
+      "value": "4 of 4",
+      "note": "Each judged on its own KPI"
+    },
+    {
+      "label": "Biggest drag",
+      "value": "Discounts",
+      "note": "-$125.8M vs a year ago"
+    },
+    {
+      "label": "Recovery",
+      "value": "+$56.2M",
+      "note": "Per quarter with all three fixes"
+    }
+  ],
+  "algorithm": [
+    {
+      "step": "Integrate four functions",
+      "output": "36 months x 4 functions"
+    },
+    {
+      "step": "Department scorecards",
+      "output": "4 of 4 teams on target"
+    },
+    {
+      "step": "Profit bridge",
+      "output": "Profit $247.5M -> $161.4M; biggest drag Discounts"
+    },
+    {
+      "step": "Lead-lag links",
+      "output": "51 strong links (|r| > 0.6)"
+    },
+    {
+      "step": "Cause map",
+      "output": "Inventory (Ops) -> Discount rate (Mkt); Inventory (Ops) -> Operating margin (Fin); Storage cost (Ops) -> Operating margin (Fin)"
+    },
+    {
+      "step": "Margin driver model",
+      "output": "Margin model R\u00b2 0.75; most negative weight Discount rate"
+    },
+    {
+      "step": "Find the trade-offs",
+      "output": "7 lines worse than a year ago"
+    },
+    {
+      "step": "Recovery plan",
+      "output": "Profit +56.2M per quarter after fixes"
+    }
+  ],
+  "tables": {
+    "Team scorecards": [
+      {
+        "team": "Marketing",
+        "own_kpi": "Unit sales growth vs last year",
+        "result": 0.127,
+        "target": 0.03,
+        "on_target": true
+      },
+      {
+        "team": "Operations",
+        "own_kpi": "On-shelf availability",
+        "result": 0.97,
+        "target": 0.95,
+        "on_target": true
+      },
+      {
+        "team": "HR",
+        "own_kpi": "Hiring plan delivered",
+        "result": 1.006,
+        "target": 1.0,
+        "on_target": true
+      },
+      {
+        "team": "Finance",
+        "own_kpi": "Cost of goods per unit vs budget",
+        "result": -0.025,
+        "target": 0.01,
+        "on_target": true
+      }
+    ],
+    "Cross-team cause links": [
+      {
+        "from": "Purchase orders (Ops)",
+        "to": "Headcount (HR)",
+        "lag_months": 1,
+        "correlation": 0.96
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Purchase orders (Ops)",
+        "lag_months": 3,
+        "correlation": 0.96
+      },
+      {
+        "from": "Purchase orders (Ops)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 3,
+        "correlation": 0.95
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Purchase orders (Ops)",
+        "lag_months": 2,
+        "correlation": 0.94
+      },
+      {
+        "from": "Purchase orders (Ops)",
+        "to": "Labour cost (HR)",
+        "lag_months": 1,
+        "correlation": 0.94
+      },
+      {
+        "from": "Freight cost (Ops)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 1,
+        "correlation": 0.92
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 1,
+        "correlation": 0.92
+      },
+      {
+        "from": "Inventory (Ops)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 2,
+        "correlation": 0.91
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Headcount (HR)",
+        "lag_months": 1,
+        "correlation": 0.91
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 3,
+        "correlation": 0.9
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Purchase orders (Ops)",
+        "lag_months": 1,
+        "correlation": 0.9
+      },
+      {
+        "from": "Storage cost (Ops)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 2,
+        "correlation": 0.9
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Labour cost (HR)",
+        "lag_months": 1,
+        "correlation": 0.89
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Freight cost (Ops)",
+        "lag_months": 1,
+        "correlation": 0.89
+      },
+      {
+        "from": "Inventory (Ops)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 2,
+        "correlation": 0.89
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Inventory (Ops)",
+        "lag_months": 3,
+        "correlation": 0.86
+      },
+      {
+        "from": "Storage cost (Ops)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 1,
+        "correlation": 0.86
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Freight cost (Ops)",
+        "lag_months": 1,
+        "correlation": 0.86
+      },
+      {
+        "from": "Freight cost (Ops)",
+        "to": "Headcount (HR)",
+        "lag_months": 1,
+        "correlation": 0.85
+      },
+      {
+        "from": "Freight cost (Ops)",
+        "to": "Labour cost (HR)",
+        "lag_months": 1,
+        "correlation": 0.84
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Inventory (Ops)",
+        "lag_months": 1,
+        "correlation": 0.84
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Freight cost (Ops)",
+        "lag_months": 1,
+        "correlation": 0.83
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Inventory (Ops)",
+        "lag_months": 3,
+        "correlation": 0.83
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Storage cost (Ops)",
+        "lag_months": 3,
+        "correlation": 0.82
+      },
+      {
+        "from": "Freight cost (Ops)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 1,
+        "correlation": 0.82
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Storage cost (Ops)",
+        "lag_months": 3,
+        "correlation": 0.82
+      },
+      {
+        "from": "Operating margin (Fin)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 1,
+        "correlation": -0.81
+      },
+      {
+        "from": "Inventory (Ops)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 1,
+        "correlation": -0.8
+      },
+      {
+        "from": "Discount rate (Mkt)",
+        "to": "Freight cost (Ops)",
+        "lag_months": 1,
+        "correlation": 0.8
+      },
+      {
+        "from": "Storage cost (Ops)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 1,
+        "correlation": -0.8
+      },
+      {
+        "from": "Discount rate (Mkt)",
+        "to": "Inventory (Ops)",
+        "lag_months": 1,
+        "correlation": 0.8
+      },
+      {
+        "from": "Purchase orders (Ops)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 3,
+        "correlation": 0.79
+      },
+      {
+        "from": "Discount rate (Mkt)",
+        "to": "Storage cost (Ops)",
+        "lag_months": 1,
+        "correlation": 0.79
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Storage cost (Ops)",
+        "lag_months": 3,
+        "correlation": 0.79
+      },
+      {
+        "from": "Purchase orders (Ops)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 3,
+        "correlation": -0.76
+      },
+      {
+        "from": "Operating margin (Fin)",
+        "to": "Inventory (Ops)",
+        "lag_months": 1,
+        "correlation": -0.76
+      },
+      {
+        "from": "Inventory (Ops)",
+        "to": "Headcount (HR)",
+        "lag_months": 1,
+        "correlation": 0.76
+      },
+      {
+        "from": "Discount rate (Mkt)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 1,
+        "correlation": -0.76
+      },
+      {
+        "from": "Operating margin (Fin)",
+        "to": "Storage cost (Ops)",
+        "lag_months": 1,
+        "correlation": -0.75
+      },
+      {
+        "from": "Unit sales (Mkt)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 3,
+        "correlation": -0.74
+      },
+      {
+        "from": "Inventory (Ops)",
+        "to": "Labour cost (HR)",
+        "lag_months": 1,
+        "correlation": 0.74
+      },
+      {
+        "from": "Operating margin (Fin)",
+        "to": "Freight cost (Ops)",
+        "lag_months": 1,
+        "correlation": -0.74
+      },
+      {
+        "from": "Storage cost (Ops)",
+        "to": "Headcount (HR)",
+        "lag_months": 1,
+        "correlation": 0.72
+      },
+      {
+        "from": "Storage cost (Ops)",
+        "to": "Labour cost (HR)",
+        "lag_months": 1,
+        "correlation": 0.7
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 1,
+        "correlation": -0.69
+      },
+      {
+        "from": "Freight cost (Ops)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 3,
+        "correlation": -0.68
+      },
+      {
+        "from": "Headcount (HR)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 3,
+        "correlation": 0.66
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Operating margin (Fin)",
+        "lag_months": 1,
+        "correlation": -0.66
+      },
+      {
+        "from": "Operating margin (Fin)",
+        "to": "Unit sales (Mkt)",
+        "lag_months": 1,
+        "correlation": -0.64
+      },
+      {
+        "from": "Discount rate (Mkt)",
+        "to": "Purchase orders (Ops)",
+        "lag_months": 1,
+        "correlation": 0.62
+      },
+      {
+        "from": "Labour cost (HR)",
+        "to": "Discount rate (Mkt)",
+        "lag_months": 1,
+        "correlation": 0.62
+      }
+    ],
+    "Trade-offs hidden by team targets": [
+      {
+        "team_win": "Operations kept shelves full",
+        "who_pays": "Finance, Marketing",
+        "how": "Purchase orders ran ahead of demand; inventory peaked at 27M units"
+      },
+      {
+        "team_win": "Marketing hit unit growth",
+        "who_pays": "Finance",
+        "how": "Discounts rose from 12% to 17% to clear stock"
+      },
+      {
+        "team_win": "HR delivered the hiring plan",
+        "who_pays": "Finance",
+        "how": "Labour cost up $4.8M a quarter"
+      },
+      {
+        "team_win": "Operations held unit cost",
+        "who_pays": "Finance",
+        "how": "Storage and freight up $49.1M a quarter"
+      }
+    ],
+    "Profit bridge": [
+      {
+        "item": "Year-ago profit",
+        "usd_m": 247.5
+      },
+      {
+        "item": "Volume",
+        "usd_m": 143.4
+      },
+      {
+        "item": "Discounts",
+        "usd_m": -125.8
+      },
+      {
+        "item": "Product cost",
+        "usd_m": -21.2
+      },
+      {
+        "item": "Freight",
+        "usd_m": -21.5
+      },
+      {
+        "item": "Storage",
+        "usd_m": -27.5
+      },
+      {
+        "item": "Marketing",
+        "usd_m": -23.3
+      },
+      {
+        "item": "Labour",
+        "usd_m": -4.8
+      },
+      {
+        "item": "Other",
+        "usd_m": -5.3
+      },
+      {
+        "item": "Latest profit",
+        "usd_m": 161.4
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "title": "Cut discounting by 4 points with a joint Marketing-Finance target",
+      "body": "Discount rate carries the largest negative weight in the margin model. Judge Marketing on gross margin per unit, not unit growth alone.",
+      "impact": "Owner: CMO + CFO"
+    },
+    {
+      "title": "Clear 30% of excess inventory and tie purchase orders to demand",
+      "body": "Inventory leads discounts by a few months. Add a sell-through check before new orders.",
+      "impact": "Owner: COO"
+    },
+    {
+      "title": "Slow headcount growth to 2% a year",
+      "body": "Labour grew faster than units. Hold back-office hiring until revenue per employee recovers.",
+      "impact": "Owner: CHRO"
+    },
+    {
+      "title": "Replace team scorecards with one shared profit tree",
+      "body": "Every team hit its own number while profit fell. Review the cause links monthly as one leadership team.",
+      "impact": "+56.2M/qtr"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+team,own_kpi,result,target,on_target
+Marketing,Unit sales growth vs last year,0.127,0.03,True
+Operations,On-shelf availability,0.97,0.95,True
+HR,Hiring plan delivered,1.006,1.0,True
+Finance,Cost of goods per unit vs budget,-0.025,0.01,True

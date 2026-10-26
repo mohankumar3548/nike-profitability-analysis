@@ -1,0 +1,51 @@
+{
+  "num": "13",
+  "area": "Business Analytics",
+  "product": "Profitability Decline Investigation",
+  "title": "Nike Profit Detective",
+  "company": "Nike",
+  "why": "Nike went through several quarters of falling profit in 2024 and 2025 while individual functions could still point to their own targets being met. This tool joins Marketing, HR, Operations and Finance data to find the cross-team chain behind the decline.",
+  "problem": "Company profitability has declined for three consecutive quarters, but individual departments report satisfactory performance. Develop an AI business analyst that integrates Marketing, HR, Operations and Finance data to identify cross-functional relationships responsible for the decline.",
+  "data_note": "36 months of Marketing, HR, Operations and Finance data for one geography (sample data, $ millions).",
+  "steps": [
+    {
+      "step": "Integrate four functions",
+      "detail": "Marketing, HR, Operations and Finance, monthly"
+    },
+    {
+      "step": "Department scorecards",
+      "detail": "Each team against its own target"
+    },
+    {
+      "step": "Profit bridge",
+      "detail": "Latest quarter vs a year ago: volume, price, cost, opex"
+    },
+    {
+      "step": "Lead-lag links",
+      "detail": "Cross-correlations between team metrics at 0 to 3 month lags"
+    },
+    {
+      "step": "Cause map",
+      "detail": "Keep strong, directional links as a cause chain"
+    },
+    {
+      "step": "Margin driver model",
+      "detail": "Regression of operating margin on cross-team metrics"
+    },
+    {
+      "step": "Find the trade-offs",
+      "detail": "Where one team's win is another team's cost"
+    },
+    {
+      "step": "Recovery plan",
+      "detail": "Simulate coordinated fixes and explain them"
+    }
+  ],
+  "questions": [
+    "Why is profit falling if every team hit target?",
+    "Who should own the fix?",
+    "What if we stop discounting but sales drop?",
+    "Write the board memo on this"
+  ],
+  "author": "K Mohan Kumar"
+}
